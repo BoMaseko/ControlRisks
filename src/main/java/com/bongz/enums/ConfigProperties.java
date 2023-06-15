@@ -1,0 +1,10 @@
+package com.bongz.enums;
+
+public enum ConfigProperties {
+    URL,
+    OVERRIDEREPORTS,
+    PASSEDSTEPSSCREENSHOT,
+    SKIPPEDSTEPSSCREENSHOT,
+    FAILEDSTEPSSCREENSHOT,
+    RETRYFAILEDTESTS
+}

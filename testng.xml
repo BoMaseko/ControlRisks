@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="1">
+    
+    <listeners>
+        <listener class-name="com.bongz.listeners.ListenerClass"></listener>
+        <listener class-name="com.bongz.listeners.MethodInterceptor"></listener>
+        <listener class-name="com.bongz.listeners.AnnotationTransformer"></listener>
+    </listeners>
+    
+    <test  thread-count="1" parallel="methods" name="Selenium_practise">
+        <classes>
+
+            <class name="com.bongz.tests.NBATests">
+                <methods>
+                    <include name="nbaSignUpTest"/>
+                    <include name="nbaLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
